@@ -23,11 +23,12 @@ print("num2 points to:", id(num2))
 
 #####################################
 
-
+## Demonstrating pointer behavior with dictionaries
 dict1 = {
          'value': 11
         }
 
+## Assigning dict1 to dict2
 dict2 = dict1 
 
 print("\n\nBefore value is updated:")
@@ -37,12 +38,15 @@ print("dict2 =", dict2)
 print("\ndict1 points to:", id(dict1))
 print("dict2 points to:", id(dict2)) 
 
+## Updating the 'value' key in dict2
 dict2['value'] = 22
 
+## Displaying the values and memory addresses after updating dict2. Both dict1 and dict2 reflect the change since they point to the same dictionary.
 print("\nAfter value is updated:")
 print("dict1 =", dict1)
 print("dict2 =", dict2) 
-
+## Since dictionary are mutable and is a key value pair, updating the key in dict2 also updates dict1.
+## Displaying memory addresses, now both point to the same dictionary
 print("\ndict1 points to:", id(dict1))
 print("dict2 points to:", id(dict2))
 
