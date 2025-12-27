@@ -28,7 +28,7 @@ class LinkedList:
             self.tail = new_node
         self.length += 1
         return True
-
+## Important detail here
     def pop(self):
         ## If the list is empty, return None
         if self.length == 0:
