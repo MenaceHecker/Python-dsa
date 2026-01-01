@@ -5,3 +5,10 @@ def get(self, index):
         for _ in range(index):
             temp = temp.next
         return temp
+
+def set_value(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
