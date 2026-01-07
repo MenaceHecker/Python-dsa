@@ -44,7 +44,7 @@ class LinkedList:
                 checked.add(temp.value)
                 prev = temp
             temp = temp.next
-        return False
+        return head
 
         
 
