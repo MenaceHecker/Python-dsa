@@ -22,6 +22,6 @@ class DoublyLinkedList:
             return True
         self.tail.next = new_node
         new_node.prev = self.tail
-        self.tail = self.tail.next
+        self.tail = new_node
         self.length += 1
         return True
