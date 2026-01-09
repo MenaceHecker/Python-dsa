@@ -25,3 +25,7 @@ class DoublyLinkedList:
         self.tail = new_node
         self.length += 1
         return True
+
+my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.append(2)
+my_doubly_linked_list.print_list()
