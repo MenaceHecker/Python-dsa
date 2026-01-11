@@ -91,3 +91,5 @@ class DoublyLinkedList:
         
         self.length += 1   
         return True
+    
+    
