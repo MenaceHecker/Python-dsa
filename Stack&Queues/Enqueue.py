@@ -25,7 +25,6 @@ class Queue:
             self.last.next = new_node
             self.last = new_node
         self.length += 1
-        return True
         
 my_queue = Queue(1)
 
