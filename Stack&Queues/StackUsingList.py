@@ -9,3 +9,4 @@ class Stack:
         if len(self.stack_list) == 0:
             return None
         return self.stack_list.pop()
+    
