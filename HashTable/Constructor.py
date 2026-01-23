@@ -3,7 +3,7 @@ class HashTable:
         self.data_map = [None] * size
 
     def _hash(self, key):
-        hash_index = 0
+        my_hash = 0
         for char in key:
-            hash_index = (hash_index + ord(char) * 23) % len(self.data_map)
-        return hash_index
+            my_hash = (my_hash + ord(char) * 23) % len(self.data_map)
+        return my_hash
