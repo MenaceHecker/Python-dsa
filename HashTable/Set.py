@@ -7,3 +7,8 @@ def set_item(self, key, value):
         key: The key to add to the set.
         value: Ignored.
     """
+    index = self.__hash(key)
+    if self.data[index] == None:
+        self.data[index] = []
+    # Check if the key already exists and update it
+    self.data[index].append([key, value])
