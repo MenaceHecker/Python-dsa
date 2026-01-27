@@ -15,6 +15,16 @@ class Solution:
             groups[wordSorted].append(s)
         return list(groups.values())
 
+
+
+
+
+
+
+
+
+
+
 ##Test functions
 def _normalize(groups: List[List[str]]) -> List[List[str]]:
     """Sort within groups and across groups so order doesn't affect tests."""

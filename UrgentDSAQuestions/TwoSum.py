@@ -4,7 +4,7 @@
 from typing import List
 import unittest
 
-
+## Main Solution
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         my_dict = {}
@@ -20,7 +20,18 @@ class Solution:
 
         return []
 
- 
+
+
+
+
+
+
+
+
+
+
+
+ ## Test functions
 class TestTwoSum(unittest.TestCase):
     def setUp(self) -> None:
         self.solution = Solution()
