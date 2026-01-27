@@ -2,6 +2,9 @@
 ## return an array answer such that answer[i] is equal to the
 ## product of all the elements of nums except nums[i].
 
+from typing import List
+
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
