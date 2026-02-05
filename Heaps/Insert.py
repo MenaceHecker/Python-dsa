@@ -21,3 +21,12 @@ class MaxHeap:
             self._swap(current, self._parent(current))
             current = self._parent(current)
     
+my_heap = MaxHeap()
+my_heap.insert(20)
+my_heap.insert(18)
+my_heap.insert(15)
+my_heap.insert(10)
+print(my_heap.heap)
+
+my_heap.insert(25)
+print(my_heap.heap)
