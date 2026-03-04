@@ -20,4 +20,9 @@ def is_balanced_parentheses(parentheses):
                 return False
     return stack.is_empty()
 
+
+
+
+
+
     
