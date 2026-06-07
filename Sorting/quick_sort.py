@@ -14,7 +14,7 @@ def pivot(my_list, pivot_index, end_index):
     swap(my_list, pivot_index, swap_index)
     return swap_index
 
-
+## Helper function for quick sort, which takes in the list and the left and right indices. It checks if the left index is less than the right index, which means there are at least two elements to sort. It then calls the pivot function to partition the list and get the pivot index. After that, it recursively calls itself on the left and right sublists defined by the pivot index. Finally, it returns the sorted list
 def quick_sort_helper(my_list, left, right):
     if left < right:
         pivot_index = pivot(my_list, left, right)
