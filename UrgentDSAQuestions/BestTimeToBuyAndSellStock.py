@@ -4,3 +4,14 @@
 ## and choosing a different day in the future to sell that stock.
 ## Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_val, max_val, dif = prices[0], 0, 0
+        for i in prices:
+            max_val = i
+            dif = max(dif, max_val - min_val)
+            if min_val > max_val:
+                min_val = max_val
+
+        return dif
+        
