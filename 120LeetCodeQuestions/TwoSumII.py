@@ -4,3 +4,25 @@
 ##Return the indices of the two numbers index1 and index2, each incremented by one, as an integer array [index1, index2] of length 2.
 ##The tests are generated such that there is exactly one solution. You may not use the same element twice.
 ##Your solution must use only constant extra space.
+
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left = 0
+        dif = 0
+        results = []
+        right = len(numbers) - 1
+        while left < right:
+            dif = target-numbers[right]
+            if numbers[left] == dif:
+                results.append(left + 1)
+                results.append(right + 1)
+                return results
+            elif dif < numbers[left]:
+                right -= 1
+            elif dif > numbers[left]:
+                left += 1
+            
+        return False
+
+
+        
