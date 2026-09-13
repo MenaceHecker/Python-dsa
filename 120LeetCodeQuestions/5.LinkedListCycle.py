@@ -19,3 +19,23 @@ class Solution:
             if(slow == fast):
                 return True
         return False
+
+## Implementation with set approach
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        new_Node = ListNode
+        current = head
+        a = set()
+        if current is None:
+            return False
+        while current.next is not None:
+            if current in a:
+                return True
+            a.add(current)
+            current = current.next
+        return False  
