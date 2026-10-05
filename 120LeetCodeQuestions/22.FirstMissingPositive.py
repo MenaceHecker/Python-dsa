@@ -2,3 +2,13 @@
 ## Return the smallest positive integer that is not present in nums.
 ## You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
+class Solution:
+    def firstMissingPositive(self, nums: list[int]) -> int:
+        sm = 1
+        nums.sort()
+        for i in nums:
+            if sm == i:
+                sm += 1
+        return sm
+
+        
